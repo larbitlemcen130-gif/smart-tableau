@@ -130,4 +130,28 @@
 <body>
     <div id="root"></div>
 </body>
+    <script type="module">
+  import React from 'react';
+  import { createRoot } from 'react-dom/client';
+
+  // Ici, vous devez insérer le code de votre application React
+  function App() {
+    return (
+      <div className="board-container h-screen flex items-center justify-center">
+        <div className="wood-frame chalkboard-bg w-11/12 h-5/6 p-10">
+          <div className="dust-overlay"></div>
+          <h1 className="chalk-text text-white text-6xl f-arefruqaa text-center">
+            مرحباً بكم في السبورة السحرية
+          </h1>
+          <p className="chalk-text text-white text-2xl text-center mt-10">
+            اكتب دروسك هنا...
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  const root = createRoot(document.getElementById('root'));
+  root.render(<App />);
+</script>
 </html>
